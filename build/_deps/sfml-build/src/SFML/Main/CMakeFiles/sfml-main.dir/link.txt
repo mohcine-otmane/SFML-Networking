@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc ..\..\..\lib\libsfml-main-d.a "CMakeFiles/sfml-main.dir/MainWin32.cpp.obj"
+C:\msys64\ucrt64\bin\ranlib.exe ..\..\..\lib\libsfml-main-d.a

@@ -14,12 +14,13 @@ FetchContent_MakeAvailable(SFML)
 
 
 
+
 add_executable(networking src/main.cpp)
 
 
 
-target_link_libraries(networking PRIVATE sfml-graphics)
-target_compile_features(networking PRIVATE cxx_std_17)
+target_link_libraries(networking PRIVATE sfml-graphics sfml-network)
+target_compile_features(networking PRIVATE cxx_std_11)
 
 if(WIN32)
     add_custom_command(
