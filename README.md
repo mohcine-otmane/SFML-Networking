@@ -1,6 +1,6 @@
 # SFML Networking Project
 
-This project demonstrates a simple networking application using SFML. The project includes a server and a client, each implemented as separate executables. The server listens for incoming connections, while the client connects to the server and exchanges data.
+This project demonstrates SFML networking and integrates a GUI library. This project will ivolve into a full fledged communications system.
 
 ## Table of Contents
 
