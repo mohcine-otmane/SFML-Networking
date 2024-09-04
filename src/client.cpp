@@ -1,46 +1,39 @@
 #include <SFML/Network.hpp>
 #include <iostream>
-#include <string>
 
-int main()
-{
-    // Create a socket to connect to the server
+int main() {
     sf::TcpSocket socket;
-
-    // Connect to the server
-    sf::Socket::Status status = socket.connect("127.0.0.1", 53000);
-    if (status != sf::Socket::Done)
-    {
+    if (socket.connect("127.0.0.1", 54000) != sf::Socket::Done) {
         std::cerr << "Error connecting to the server" << std::endl;
-        return -1;
+        return 1;
     }
-    std::cout << "Connected to the server!" << std::endl;
 
-    while (true)
-    {
-        // Read user input
-        std::string message;
-        std::cout << "Enter message to send to the server: ";
-        std::getline(std::cin, message);
+    std::cout << "Connected to the server" << std::endl;
 
-        // Send the message to the server
-        if (socket.send(message.c_str(), message.size()) != sf::Socket::Done)
-        {
+    std::string input;
+    char buffer[1024];
+    std::size_t received;
+
+    while (true) {
+        std::cout << "Enter the target client ID: ";
+        int targetClientId;
+        std::cin >> targetClientId;
+        std::cin.ignore();  // To clear the newline character from the input buffer
+
+        std::cout << "Enter your message: ";
+        std::getline(std::cin, input);
+
+        buffer[0] = static_cast<char>(targetClientId);  // The first byte is the target client ID
+        std::copy(input.begin(), input.end(), buffer + 1);
+
+        if (socket.send(buffer, input.size() + 1) != sf::Socket::Done) {
             std::cerr << "Error sending message" << std::endl;
-            continue;
+            break;
         }
 
-        // Receive response from the server
-        char data[100];
-        std::size_t received;
-        if (socket.receive(data, sizeof(data), received) != sf::Socket::Done)
-        {
-            std::cerr << "Error receiving message from the server" << std::endl;
-            continue;
+        if (socket.receive(buffer, sizeof(buffer), received) == sf::Socket::Done) {
+            std::cout << "Received message: " << std::string(buffer, received) << std::endl;
         }
-
-        // Display the response
-        std::cout << "Server response: " << std::string(data, received) << std::endl;
     }
 
     return 0;
