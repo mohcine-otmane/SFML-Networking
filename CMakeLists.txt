@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.5.0)
 project(networking VERSION 0.1.0 LANGUAGES C CXX)
 
-
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-# option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
 include(FetchContent)
 FetchContent_Declare(SFML
@@ -12,20 +10,21 @@ FetchContent_Declare(SFML
     GIT_SHALLOW ON)
 FetchContent_MakeAvailable(SFML)
 
+# Add the server executable
+add_executable(server src/server.cpp)
+target_link_libraries(server PRIVATE sfml-graphics sfml-network)
+target_compile_features(server PRIVATE cxx_std_11)
 
-
-
-add_executable(networking src/main.cpp)
-
-
-
-target_link_libraries(networking PRIVATE sfml-graphics sfml-network)
-target_compile_features(networking PRIVATE cxx_std_11)
+# Add the client executable
+add_executable(client src/client.cpp)
+target_link_libraries(client PRIVATE sfml-graphics sfml-network)
+target_compile_features(client PRIVATE cxx_std_11)
 
 if(WIN32)
     add_custom_command(
-        TARGET networking
+        TARGET server client
         COMMENT "Copy OpenAL DLL"
-        PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SFML_SOURCE_DIR}/extlibs/bin/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,x64,x86>/openal32.dll $<TARGET_FILE_DIR:networking>
+        PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SFML_SOURCE_DIR}/extlibs/bin/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,x64,x86>/openal32.dll $<TARGET_FILE_DIR:server>
+        PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SFML_SOURCE_DIR}/extlibs/bin/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,x64,x86>/openal32.dll $<TARGET_FILE_DIR:client>
         VERBATIM)
 endif()

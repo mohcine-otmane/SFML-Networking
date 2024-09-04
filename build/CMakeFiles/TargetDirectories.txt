@@ -1,4 +1,5 @@
-C:/Users/Administrator/Desktop/Github/SFML-Networking/build/CMakeFiles/networking.dir
+C:/Users/Administrator/Desktop/Github/SFML-Networking/build/CMakeFiles/server.dir
+C:/Users/Administrator/Desktop/Github/SFML-Networking/build/CMakeFiles/client.dir
 C:/Users/Administrator/Desktop/Github/SFML-Networking/build/CMakeFiles/package.dir
 C:/Users/Administrator/Desktop/Github/SFML-Networking/build/CMakeFiles/package_source.dir
 C:/Users/Administrator/Desktop/Github/SFML-Networking/build/CMakeFiles/edit_cache.dir

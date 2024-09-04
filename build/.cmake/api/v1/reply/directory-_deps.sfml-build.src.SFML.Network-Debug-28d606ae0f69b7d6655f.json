@@ -9,7 +9,7 @@
 		"files" : 
 		[
 			"build/_deps/sfml-src/cmake/Macros.cmake",
-			"build/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt"
+			"build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -19,7 +19,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 80,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -38,10 +38,10 @@
 			"destination" : "lib",
 			"paths" : 
 			[
-				"_deps/sfml-build/lib/libsfml-audio-d.a"
+				"_deps/sfml-build/lib/libsfml-network-d.a"
 			],
-			"targetId" : "sfml-audio::@a153e5727587c53fce98",
-			"targetIndex" : 1,
+			"targetId" : "sfml-network::@d7f79968b2699e7782cb",
+			"targetIndex" : 5,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -51,16 +51,16 @@
 			"destination" : "bin",
 			"paths" : 
 			[
-				"bin/sfml-audio-d-2.dll"
+				"bin/sfml-network-d-2.dll"
 			],
-			"targetId" : "sfml-audio::@a153e5727587c53fce98",
-			"targetIndex" : 1,
+			"targetId" : "sfml-network::@d7f79968b2699e7782cb",
+			"targetIndex" : 5,
 			"type" : "target"
 		}
 	],
 	"paths" : 
 	{
-		"build" : "_deps/sfml-build/src/SFML/Audio",
-		"source" : "build/_deps/sfml-src/src/SFML/Audio"
+		"build" : "_deps/sfml-build/src/SFML/Network",
+		"source" : "build/_deps/sfml-src/src/SFML/Network"
 	}
 }

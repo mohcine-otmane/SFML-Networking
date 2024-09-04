@@ -1,9 +1,15 @@
 [
 {
   "directory": "C:/Users/Administrator/Desktop/Github/SFML-Networking/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/Administrator/Desktop/Github/SFML-Networking/build/_deps/sfml-src/include -g -o CMakeFiles\\networking.dir\\src\\main.cpp.obj -c C:\\Users\\Administrator\\Desktop\\Github\\SFML-Networking\\src\\main.cpp",
-  "file": "C:\\Users\\Administrator\\Desktop\\Github\\SFML-Networking\\src\\main.cpp",
-  "output": "CMakeFiles\\networking.dir\\src\\main.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/Administrator/Desktop/Github/SFML-Networking/build/_deps/sfml-src/include -g -o CMakeFiles\\server.dir\\src\\server.cpp.obj -c C:\\Users\\Administrator\\Desktop\\Github\\SFML-Networking\\src\\server.cpp",
+  "file": "C:\\Users\\Administrator\\Desktop\\Github\\SFML-Networking\\src\\server.cpp",
+  "output": "CMakeFiles\\server.dir\\src\\server.cpp.obj"
+},
+{
+  "directory": "C:/Users/Administrator/Desktop/Github/SFML-Networking/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/Administrator/Desktop/Github/SFML-Networking/build/_deps/sfml-src/include -g -o CMakeFiles\\client.dir\\src\\client.cpp.obj -c C:\\Users\\Administrator\\Desktop\\Github\\SFML-Networking\\src\\client.cpp",
+  "file": "C:\\Users\\Administrator\\Desktop\\Github\\SFML-Networking\\src\\client.cpp",
+  "output": "CMakeFiles\\client.dir\\src\\client.cpp.obj"
 },
 {
   "directory": "C:/Users/Administrator/Desktop/Github/SFML-Networking/build",

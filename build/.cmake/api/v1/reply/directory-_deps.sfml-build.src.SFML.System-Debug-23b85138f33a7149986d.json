@@ -9,7 +9,7 @@
 		"files" : 
 		[
 			"build/_deps/sfml-src/cmake/Macros.cmake",
-			"build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt"
+			"build/_deps/sfml-src/src/SFML/System/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -19,7 +19,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 48,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
@@ -38,10 +38,10 @@
 			"destination" : "lib",
 			"paths" : 
 			[
-				"_deps/sfml-build/lib/libsfml-network-d.a"
+				"_deps/sfml-build/lib/libsfml-system-d.a"
 			],
-			"targetId" : "sfml-network::@d7f79968b2699e7782cb",
-			"targetIndex" : 4,
+			"targetId" : "sfml-system::@8cb1db2982443611e568",
+			"targetIndex" : 6,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -51,16 +51,16 @@
 			"destination" : "bin",
 			"paths" : 
 			[
-				"bin/sfml-network-d-2.dll"
+				"bin/sfml-system-d-2.dll"
 			],
-			"targetId" : "sfml-network::@d7f79968b2699e7782cb",
-			"targetIndex" : 4,
+			"targetId" : "sfml-system::@8cb1db2982443611e568",
+			"targetIndex" : 6,
 			"type" : "target"
 		}
 	],
 	"paths" : 
 	{
-		"build" : "_deps/sfml-build/src/SFML/Network",
-		"source" : "build/_deps/sfml-src/src/SFML/Network"
+		"build" : "_deps/sfml-build/src/SFML/System",
+		"source" : "build/_deps/sfml-src/src/SFML/System"
 	}
 }

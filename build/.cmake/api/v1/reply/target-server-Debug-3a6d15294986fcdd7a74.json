@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/networking.exe"
+			"path" : "bin/server.exe"
 		},
 		{
-			"path" : "bin/networking.pdb"
+			"path" : "bin/server.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,13 +30,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 22,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -90,18 +90,18 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-network::@d7f79968b2699e7782cb"
+			"id" : "sfml-window::@5730451e331e3690ae65"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@5730451e331e3690ae65"
+			"id" : "sfml-network::@d7f79968b2699e7782cb"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "sfml-graphics::@98af38147d5fa7e70f61"
 		}
 	],
-	"id" : "networking::@6890427a1f51a3e7e1df",
+	"id" : "server::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -141,8 +141,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "networking",
-	"nameOnDisk" : "networking.exe",
+	"name" : "server",
+	"nameOnDisk" : "server.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -163,7 +163,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "src/server.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

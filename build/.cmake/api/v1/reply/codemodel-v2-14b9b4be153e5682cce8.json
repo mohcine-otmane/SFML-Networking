@@ -20,7 +20,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				},
 				{
@@ -30,7 +31,7 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.sfml-build-Debug-c0695a5bd808952ceb93.json",
+					"jsonFile" : "directory-_deps.sfml-build-Debug-ec6959f3c4682b52b2b5.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.7.2"
@@ -63,7 +64,7 @@
 				{
 					"build" : "_deps/sfml-build/src/SFML/System",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.sfml-build.src.SFML.System-Debug-65c95c66742886412f0d.json",
+					"jsonFile" : "directory-_deps.sfml-build.src.SFML.System-Debug-23b85138f33a7149986d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.7.2"
@@ -73,13 +74,13 @@
 					"source" : "build/_deps/sfml-src/src/SFML/System",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
 					"build" : "_deps/sfml-build/src/SFML/Main",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Main-Debug-496baa15a088ae638e7e.json",
+					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Main-Debug-c4da4ffb0a7b97698956.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.7.2"
@@ -89,13 +90,13 @@
 					"source" : "build/_deps/sfml-src/src/SFML/Main",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
 					"build" : "_deps/sfml-build/src/SFML/Window",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Window-Debug-8e06b953650218ff9efd.json",
+					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Window-Debug-bd1d7b04f4149e05fe33.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.7.2"
@@ -105,13 +106,13 @@
 					"source" : "build/_deps/sfml-src/src/SFML/Window",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
 					"build" : "_deps/sfml-build/src/SFML/Network",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Network-Debug-4dd6ae9ca826af99027a.json",
+					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Network-Debug-28d606ae0f69b7d6655f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.7.2"
@@ -121,13 +122,13 @@
 					"source" : "build/_deps/sfml-src/src/SFML/Network",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
 					"build" : "_deps/sfml-build/src/SFML/Graphics",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Graphics-Debug-cc468d2592ca554e9896.json",
+					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Graphics-Debug-2cf9a55d3c3c65c34ded.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.7.2"
@@ -137,13 +138,13 @@
 					"source" : "build/_deps/sfml-src/src/SFML/Graphics",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
 					"build" : "_deps/sfml-build/src/SFML/Audio",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Audio-Debug-23228b22be8f32310c03.json",
+					"jsonFile" : "directory-_deps.sfml-build.src.SFML.Audio-Debug-2982333df8a55064fb55.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.7.2"
@@ -153,7 +154,7 @@
 					"source" : "build/_deps/sfml-src/src/SFML/Audio",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				}
 			],
@@ -172,7 +173,8 @@
 					"name" : "networking",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				},
 				{
@@ -191,12 +193,12 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1,
 						2,
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -204,9 +206,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "networking::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-networking-Debug-838ac1c66a8dc603cf01.json",
-					"name" : "networking",
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-Debug-7e7d52d34da63a6ecdcd.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-Debug-3a6d15294986fcdd7a74.json",
+					"name" : "server",
 					"projectIndex" : 0
 				},
 				{
