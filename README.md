@@ -89,7 +89,7 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
-3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
+3. Commit your Changes (`git commit -m 'Add NewFeature'`)
 4. Push to the Branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
